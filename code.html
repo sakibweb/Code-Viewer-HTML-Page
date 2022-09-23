@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_black&stacked=h
+
+
+https://gist.github.com/random-char/8330d4093a13305b0e7673a73fc9c9d9
+
+
+https://codepen.io/mottox2/pen/wmGopW-->
+
+
+
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel=stylesheet href="https://codemirror.net/5/lib/codemirror.css">
+<link rel=stylesheet href="https://codemirror.net/5/doc/docs.css">
+<link rel="stylesheet" href="https://codemirror.net/5/addon/dialog/dialog.css">
+<link rel="stylesheet" href="https://codemirror.net/5/addon/search/matchesonscrollbar.css">
+<link rel=stylesheet href="https://codemirror.net/5/addon/display/fullscreen.css">
+<link rel=stylesheet href="https://codemirror.net/5/addon/scroll/simplescrollbars.css">
+
+<link rel="stylesheet" href="https://codemirror.net/5/theme/3024-day.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/3024-night.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/abbott.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/abcdef.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/ambiance.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/ayu-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/ayu-mirage.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/base16-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/bespin.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/base16-light.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/blackboard.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/cobalt.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/colorforth.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/dracula.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/duotone-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/duotone-light.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/eclipse.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/elegant.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/erlang-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/gruvbox-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/hopscotch.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/icecoder.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/isotope.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/juejin.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/lesser-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/liquibyte.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/lucario.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/material.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/material-darker.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/material-palenight.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/material-ocean.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/mbo.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/mdn-like.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/midnight.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/monokai.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/moxer.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/neat.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/neo.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/night.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/nord.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/oceanic-next.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/panda-syntax.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/paraiso-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/paraiso-light.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/pastel-on-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/railscasts.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/rubyblue.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/seti.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/shadowfox.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/solarized.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/the-matrix.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/tomorrow-night-bright.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/tomorrow-night-eighties.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/ttcn.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/twilight.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/vibrant-ink.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/xq-dark.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/xq-light.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/yeti.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/idea.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/darcula.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/yonce.css">
+<link rel="stylesheet" href="https://codemirror.net/5/theme/zenburn.css">
+
+<script src="https://codemirror.net/5/lib/codemirror.js"></script>
+<script src="https://codemirror.net/5/mode/xml/xml.js"></script>
+<script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
+<script src="https://codemirror.net/5/mode/css/css.js"></script>
+<script src="https://codemirror.net/5/mode/htmlmixed/htmlmixed.js"></script>
+<script src="https://codemirror.net/5/mode/python/python.js"></script>
+<script src="https://codemirror.net/5/mode/php/php.js"></script>
+<script src="https://codemirror.net/5/mode/clike/clike.js"></script>
+<script src="https://codemirror.net/5/mode/markdown/markdown.js"></script>
+<script src="closebrackets.js"></script>
+<script src="closetag.js"></script>
+<script src="continuelist.js"></script>
+<script src="https://codemirror.net/5/addon/edit/matchbrackets.js"></script>
+<script src="matchtags.js"></script>
+<script src="trailingspace.js"></script>
+
+<link rel=stylesheet href="https://codemirror.net/5/addon/hint/show-hint.css">
+<script src="https://codemirror.net/5/addon/hint/anyword-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/css-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/html-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/javascript-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/show-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/sql-hint.js"></script>
+<script src="https://codemirror.net/5/addon/hint/xml-hint.js"></script>
+
+<script src="https://codemirror.net/5/addon/selection/active-line.js"></script>
+<script src="mark-selection.js"></script>
+<script src="selection-pointer.js"></script>
+
+<link rel=stylesheet href="https://codemirror.net/5/addon/fold/foldgutter.css">
+<script src="https://codemirror.net/5/addon/fold/brace-fold.js"></script>
+<script src="https://codemirror.net/5/addon/fold/comment-fold.js"></script>
+<script src="https://codemirror.net/5/addon/fold/foldcode.js"></script>
+<script src="https://codemirror.net/5/addon/fold/foldgutter.js"></script>
+<script src="https://codemirror.net/5/addon/fold/indent-fold.js"></script>
+<script src="https://codemirror.net/5/addon/fold/markdown-fold.js"></script>
+<script src="https://codemirror.net/5/addon/fold/xml-fold.js"></script>
+
+<script src="https://codemirror.net/5/keymap/vim.js"></script>
+<script src="https://codemirror.net/5/keymap/emacs.js"></script>
+<script src="https://codemirror.net/5/keymap/sublime.js"></script>
+
+<script src="https://codemirror.net/5/addon/dialog/dialog.js"></script>
+<script src="https://codemirror.net/5/addon/search/searchcursor.js"></script>
+<script src="https://codemirror.net/5/addon/search/search.js"></script>
+<script src="https://codemirror.net/5/addon/scroll/annotatescrollbar.js"></script>
+<script src="https://codemirror.net/5/addon/search/matchesonscrollbar.js"></script>
+<script src="https://codemirror.net/5/addon/search/jump-to-line.js"></script>
+<script src="https://codemirror.net/5/addon/display/fullscreen.js"></script>
+<script src="https://codemirror.net/5/addon/scroll/simplescrollbars.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
+<style type="text/css">
+  body {
+    margin: 0px;
+    padding: 0px;
+    height: 99%;
+  }
+  textarea#setter  {
+    left: -1000px;
+    position: absolute;
+  }
+  .cursor {
+    font-size: 12px;
+    background-color: black;
+    color: black;
+    position: relative;
+  }
+  #terminal {
+    margin: 8px;
+    cursor: text;
+    height: 500px;
+    overflow: auto;
+  }
+  #writer {
+    font-family: cursor, courier;
+    font-weight: bold;
+  }
+  #getter {
+    margin: 5px;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Be Developer</h1>
+  <h4>Sakibur Rahman</h4>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+</div>
+
+
+
+<div class="w3-border" id="element">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'html')"><i class="fa-brands fa-html5"></i> HTML</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'css')"><i class="fa-brands fa-css3"></i> CSS</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'js')"><i class="fa-brands fa-node-js"></i> JS</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'php')"><i class="fa-brands fa-php"></i> PHP</button>
+  <a class="w3-bar-item w3-padding-16 w3-center" onclick="" style="position: absolute; left:300px; right:300px; width: auto; "><i class="fa-thin fa-pen-line"></i>Code by Sakib</a>
+  <div style="position: absolute; right: 0px; width: auto;">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick=""><i class="fa fa-caret-down"></i></button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick=""><i class="fa-solid fa-window-minimize"></i></button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" id="go-button" onclick=""><i id="full_btn" class="fa-solid fa-compress"></i></button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick=""><i class="fa fa-remove"></i></button>
+  </div>
+</div>
+
+
+
+<!--000000000000000-->
+<div id="html" class="w3-container city w3-animate-opacity" style="padding: 0.01em;">
+  <textarea id=code1 name="code" style="display: none;" class="CodeMirror cm-s-default CodeMirror-simplescroll" translate="no" autocorrect="true" autocapitalize="off" spellcheck="true">
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <p>Hello, World!</p>
+    </body>
+</html>
+
+</textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code1"), {
+	  lineNumbers: true,
+	  lineWrapping: true,
+	  theme:"rubyblue",
+      mode: "text/html",
+      matchBrackets: true,
+	  keyMap: "sublime",
+	  extraKeys: {"Alt-F": "findPersistent"},
+	  extraKeys: {"Ctrl-Space": "autocomplete"},
+	  extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+	  extraKeys: {"F11": function(cm) {cm.setOption("fullScreen", !cm.getOption("fullScreen"));},
+        "Esc": function(cm) {if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);}},
+	  foldGutter: true,
+	  gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lines"]
+    });
+	editor.save()
+  </script>  
+</div>
+<!--000000000000000-->
+<div id="css" class="w3-container city w3-animate-opacity" style="padding: 0.01em;">
+  <textarea id=code2>
+<style type="text/css">
+p {
+	color: DeepSkyBlue;
+}
+</style>
+</textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code2"), {
+	  lineNumbers: true,
+	  lineWrapping: true,
+	  theme:"rubyblue",
+      mode: "text/x-scss",
+      matchBrackets: true,
+	  keyMap: "sublime",
+	  extraKeys: {"Alt-F": "findPersistent"},
+	  extraKeys: {"Ctrl-Space": "autocomplete"},
+	  extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+	  extraKeys: {"F11": function(cm) {cm.setOption("fullScreen", !cm.getOption("fullScreen"));},
+        "Esc": function(cm) {if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);}},
+	  foldGutter: true,
+	  gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lines"]
+    });
+	editor.save()
+  </script>  
+</div>
+<!--000000000000000-->
+<div id="js" class="w3-container city w3-animate-opacity" style="padding: 0.01em;">
+  <textarea id=code3>
+console.log('Hello, World!');
+</textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code3"), {
+	  lineNumbers: true,
+	  lineWrapping: true,
+	  theme:"rubyblue",
+      mode: "text/javascript",
+      matchBrackets: true,
+	  continueComments: "Enter",
+	  keyMap: "sublime",
+	  extraKeys: {"Alt-F": "findPersistent"},
+	  extraKeys: {"Ctrl-Space": "autocomplete"},
+	  extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+	  extraKeys: {"F11": function(cm) {cm.setOption("fullScreen", !cm.getOption("fullScreen"));},
+        "Esc": function(cm) {if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);}},
+	  foldGutter: true,
+	  gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lines"]
+    });
+	editor.save()
+  </script>  
+</div>
+<!--000000000000000-->
+<div id="php" class="w3-container city w3-animate-opacity" style="padding: 0.01em;">
+  <textarea id=code4 name="code" style="display: none;" class="CodeMirror cm-s-default CodeMirror-simplescroll" translate="no" autocorrect="true" autocapitalize="off" spellcheck="true">
+<?php
+echo "Hello World!";
+?>
+</textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code4"), {
+	  lineNumbers: true,
+	  lineWrapping: true,
+	  theme:"rubyblue",
+      mode: "text/x-php",
+      matchBrackets: true,
+	  keyMap: "sublime",
+	  indentUnit: 4,
+      indentWithTabs: true,
+	  extraKeys: {"Alt-F": "findPersistent"},
+	  extraKeys: {"Ctrl-Space": "autocomplete"},
+	  extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+	  extraKeys: {"F11": function(cm) {cm.setOption("fullScreen", !cm.getOption("fullScreen"));},
+        "Esc": function(cm) {if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);}},
+	  foldGutter: true,
+	  gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lines"]
+    });
+	editor.save()
+  </script>  
+</div>
+<!--000000000000000-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3><i class="fa fa-terminal"></i> Code Review & Editor</h3>
+  <p>Create By <a href="https://sakib-me.w3spaces.com" target="_blank">Sakib</a> <small><small>With <a href="https://w3schools.com" target="_blank">w3schools</a> & <a href="https://codemirror.net" target="_blank">CodeMirror</a></p></small></small>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href=""><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>All Right Reserved By Sakib ©2022</p>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+
+
+minMaxClose('element1', options1);
+
+</script>
+<script>
+
+/* Get into full screen */
+function GoInFullscreen(element) {
+	if(element.requestFullscreen)
+		element.requestFullscreen();
+	else if(element.mozRequestFullScreen)
+		element.mozRequestFullScreen();
+	else if(element.webkitRequestFullscreen)
+		element.webkitRequestFullscreen();
+	else if(element.msRequestFullscreen)
+		element.msRequestFullscreen();
+}
+
+/* Get out of full screen */
+function GoOutFullscreen() {
+	if(document.exitFullscreen)
+		document.exitFullscreen();
+	else if(document.mozCancelFullScreen)
+		document.mozCancelFullScreen();
+	else if(document.webkitExitFullscreen)
+		document.webkitExitFullscreen();
+	else if(document.msExitFullscreen)
+		document.msExitFullscreen();
+}
+
+/* Is currently in full screen or not */
+function IsFullScreenCurrently() {
+	var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+	
+	// If no element is in full-screen
+	if(full_screen_element === null)
+		return false;
+	else
+		return true;
+}
+
+$("#go-button").on('click', function() {
+	if(IsFullScreenCurrently())
+		GoOutFullscreen();
+	else
+		GoInFullscreen($("#element").get(0));
+});
+
+var f_btn = document.getElementById("full_btn");
+
+$(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', function() {
+	if(IsFullScreenCurrently()) {
+		//$("#element span").text('Full Screen Mode Enabled');
+		//$("#go-button").text('<i class="fa fa-window-maximize">');
+		//f_btn.classList.remove("fa fa-window-restore");
+		f_btn.classList.add("fa fa-window-maximize");
+	}
+	else {
+		//$("#element span").text('Full Screen Mode Disabled');
+		//$("#go-button").text('Enable Full Screen');
+		//f_btn.classList.remove("fa fa-window-maximize");
+		f_btn.classList.add("fa fa-window-restore");
+	}
+	
+});
+
+</script>
+</body>
+</html>
